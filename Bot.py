@@ -10,6 +10,7 @@ from InstaBot.Templates.User_detail import *
 from InstaBot.Templates.PostLike import *
 from InstaBot.Templates.Follow_Unfollow import *
 from InstaBot.Templates.Message_send import *
+from InstaBot.Templates.Upload_post import *
 
 
 import time
@@ -33,7 +34,7 @@ def search(username):
 
 
 def user_detail(users):
-    fetch_user_detail(users, driver, By, Keys)
+    return fetch_user_detail(users, driver, By, Keys, NoSuchElementException)
 
 
 def like_n_post(username, allpost=0):
@@ -78,3 +79,11 @@ def home_page():
 
 def send_message(username, message, n=1):
     send(username, message, n, driver, By, time, Keys)
+
+
+def upload_post(Image_Url, Caption):
+    post_upload(Image_Url, Caption, time, driver, By, NoSuchElementException, Keys)
+
+
+def convert_excel(data):
+    convert(data)

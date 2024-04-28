@@ -19,7 +19,7 @@ def fresh_login(username, password, driver, By, Keys, NoSuchElementException):
     password_field.send_keys(Keys.RETURN)
     time.sleep(4)
     print("Logged In SuccessFully")
-    time.sleep(2)
+    time.sleep(3)
     try:
         time.sleep(3)
         driver.find_element(
