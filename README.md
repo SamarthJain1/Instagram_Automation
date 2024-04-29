@@ -128,5 +128,5 @@ With these steps, you're all set to start using the Instagram Automation Bot. En
 
 ## License
 
-This project is licensed under the MIT License - see the [README](README) file for details.
+This project is licensed under the MIT License - see the [README.md](README.md) file for details.
 
